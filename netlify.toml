@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "src"  # Change this to your actual publish directory
-
-[[plugins]]
-  package = "netlify-plugin-tailwindcss"
