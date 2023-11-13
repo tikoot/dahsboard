@@ -3,7 +3,8 @@
     "tailwindcss": "^3.3.3"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./styles/styles.css -o ./styles/output.css --watch"
+    "dev": "npx tailwindcss -i ./styles/styles.css -o ./styles/output.css --watch",
+    "build": "npx tailwindcss -i ./styles/styles.css -o ./styles/output.css && NODE_ENV=production postcss ./styles/output.css -o ./styles/output.min.css"
   },
   "dependencies": {
     "scrollreveal": "^4.0.9"
